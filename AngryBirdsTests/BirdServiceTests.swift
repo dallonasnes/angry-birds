@@ -34,6 +34,7 @@ class BirdServiceTests: XCTestCase {
             promise.fulfill()
         })
         wait(for: [promise], timeout: 5)
+        print(birds.count)
         
         //Then
         XCTAssertNotNil(birds)
